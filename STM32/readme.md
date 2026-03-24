@@ -1,5 +1,4 @@
-
-# 🐞 BUG – STM32 Firmware
+# 🐞 BUG – STM32
 
 ## 🚀 Overview
 
@@ -68,15 +67,15 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 * On board 4 pin connector to connect with ST-Link
 * Count Pin 1 from the button side as per the image
 
-![STM32_LINK](https://github.com/user-attachments/assets/e6c97faa-72a2-4a80-b235-3f60f9119eec)
-
-
  | Function | Pin |
  |--------|--------|
  | PIN 1  | GND    |
  | PIN 2  | SWCLK  |
  | PIN 3  | SWDIO  |
  | PIN 4  | 3V3    |
+
+![STM32_LINK](https://github.com/user-attachments/assets/e6c97faa-72a2-4a80-b235-3f60f9119eec)
+
 
 <img width="700" height="400" alt="stm32Con" src="https://github.com/user-attachments/assets/dad540dc-0cee-41d2-ad22-e1a5d51f958a" />
 
@@ -102,62 +101,110 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 
 ---
 
-## 📂 Repository Structure
+# 🛠 Getting Started
 
-```bash
-firmware/BUG_Factory/   → Main production firmware  
-firmware/core/          → Reusable modules  
-examples/               → Feature-based demos  
-docs/                   → Images, wiring, guides  
-hardware/               → PCB and schematics  
-tools/                  → Assets and utilities  
+### Step 1. Install STM32 Board Support
+
+1. Open **Arduino IDE**
+
+2. Go to:
+   `File → Preferences`
+
+3. In **Additional Board Manager URLs**, add:
+
+```
+https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+```
+
+4. Click **OK**
+
+---
+
+### Step 2. Install STM32 Core
+
+1. Go to:
+   `Tools → Board → Boards Manager`
+
+2. Search for:
+
+```
+STM32
+```
+
+3. Install:
+
+```
+STM32 MCU based boards (by STMicroelectronics)
 ```
 
 ---
 
-## 🛠 Getting Started
+### ⚙️ Step 3. Select Board
 
-### 1️⃣ Requirements
+For BUG (custom STM32 board):
 
-* Arduino IDE
+```
+Tools → Board → Generic STM32F4 series
+```
+
+---
+
+### ⚙️ Step 4. Recommended Settings
+
+USB Support - HID (Keyboard & Mouse)
+
+Always use this setting for HID operations, without this BUG can't access the Keyboard & Mouse of the Computer.
+
+| Setting       | Value                                     |
+| -------------      | ----------------------------------|
+| Board              | Generic STM32F4 series            |
+| Board Part Number  | Generic F411CEUx                  |
+| Upload Method      | STM32CubeProgrammer(DFU)          |
+| USB Support        | HID (Keyboard & Mouse)            |
+
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/359fb262-1810-4eeb-b34a-a87d56c088ae" />
+
+---
+
+### ⚙️ Step 5. Compile and Upload
+Now you can uplaod the code to the BUG by clikcing the upload button in Arduino
+
+---
+
+### 🔌 Step 6. Upload Methods
+
+#### 🥉 USB (DFU Mode) (Recommended)
+
+Press the button and insert BUG-STM32 USB Dongle to the computer and then open "Device Manager" you will see the STM32 board will pop-up in USB bootloader mode.
+
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/cdda4e80-63bd-4895-8d14-ae5a11f9598a" />
+
+
+Everytime you have to press the key to enter the USB-BOOTLOADER mode, so that you can directly program the STM32 without needing any external hardware.
+
+---
+#### 🥇 ST-Link
+
+You can also use ST-Link to uplaod the code to your Bug device using STM32 Cube Programmer software. For more information about this software please check the link - https://www.st.com/en/development-tools/stm32cubeprog.html
+
+For this you need the ST-Link dongle and connect the BUG using the connector.
+
+![STM32_LINK](https://github.com/user-attachments/assets/fe9eb946-cdba-486d-8aa5-b3c0bddd83dd)
+
+
+---
+
+
+## Library Requirements
+
+Few Libraries are required to run the BUG-STM32, make sure they are pre-installed before running the examples
 * STM32 Arduino Core
 * Required Libraries:
-
-  * Adafruit GFX
-  * Adafruit ST7735
-  * SD
-
----
-
-### 2️⃣ Setup
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/your-username/BUG-STM32-Arduino.git
-```
-
-2. Open:
-
-```
-firmware/BUG_Factory/BUG_Factory.ino
-```
-
-3. Select your STM32 board in Arduino IDE
-
-4. Upload the code
-
----
-
-### 3️⃣ First Run
-
-On boot, BUG will:
-
-* Initialize display
-* Check SD card
-* Show UI
-* Run RGB effects
-* Display scrolling content
+  * **Adafruit_GFX** - For animations
+  * **Adafruit_ST7735** - For 0.96 TFT Display
+  * **SD** - For SD Card
+  * **Adafruit_NeoPixel** - For RGB LED
+  * **SPI** - To run the SPI
 
 ---
 
@@ -181,100 +228,12 @@ Explore ready-to-use examples:
 
 ---
 
-## 🔌 Hardware Info
-
-* MCU: STM32
-* Display: ST7735 TFT
-* Storage: SD Card
-* LED: WS2812 RGB
-
-See:
-👉 `docs/wiring/` for pin configuration
-
----
-
-## ⚠️ Notes
-
-* Avoid using boot-sensitive pins for peripherals
-* Ensure proper SD card wiring
-* Use good quality USB cable for flashing
-
----
-
-## 🧾 License
-
-This project is licensed under the MIT License.
-
----
-
-## ❤️ Support
-
-If you like this project, consider supporting BUG on Kickstarter 🚀
-
----
-
-## 👨‍💻 Contributing
-
-Pull requests and ideas are welcome!
-Help improve BUG and build something amazing together.
-
-
-
-
-## 🔌 Pin Map (STM32 BUG)
-
-### 📺 TFT Display (ST7735 – Software SPI)
-
-| Function | Pin |
-|--------|-----|
-| MOSI   | PB15 |
-| SCLK   | PB10 |
-| CS     | PB12 |
-| DC     | PB14 |
-| RST    | PB13 |
-| BL     | PB9  |
-
----
-
-### 💾 SD Card (Hardware SPI1)
-
-| Function | Pin |
-|--------|-----|
-| CS     | PB6  |
-| MOSI   | PB5  |
-| MISO   | PB4  |
-| SCLK   | PB3  |
-
----
-
-### 🌈 WS2812 RGB LED
-
-| Function | Pin |
-|--------|-----|
-| Data   | PC13 |
-
----
-
-### 🔌 USB
-
-| Function | Description |
-|--------|-------------|
-| USB    | Programming & Power |
-
----
 
 ### ⚠️ Important Notes
 
 - SD card uses **hardware SPI1**, separate from display SPI  
-- TFT uses **software SPI**, allowing flexible pin mapping  
-- Ensure proper power supply for stable SD card operation  
-- WS2812 requires stable 5V/3.3V and proper grounding  
-
+- TFT uses **software SPI**, allowing flexible pin mapping
+  
 ---
 
-### 💡 Design Considerations
-
-- Avoid reusing SPI pins for other peripherals  
-- Keep SD card wiring short for stability  
-- Use pull-up resistors if needed for reliable boot  
 
