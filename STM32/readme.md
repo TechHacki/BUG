@@ -26,14 +26,14 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 * Text, graphics, and animation support
 * Use Software SPI
 
-| Function | Pin |
-|--------|-----|
-| MOSI   | PB15 |
-| SCLK   | PB10 |
-| CS     | PB12 |
-| DC     | PB14 |
-| RST    | PB13 |
-| BL     | PB9  |
+ | Function | Pin |
+ |--------|-----|
+ | MOSI   | PB15 |
+ | SCLK   | PB10 |
+ | CS     | PB12 |
+ | DC     | PB14 |
+ | RST    | PB13 |
+ | BL     | PB9  |
 ---
 
 ### 💾 SD Card Support
@@ -43,12 +43,12 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 * Perfect for dynamic content display
 * Configure SPI1 pins manually
 
-| Function | Pin |
-|--------|-----|
-| CS     | PB6  |
-| MOSI   | PB5  |
-| MISO   | PB4  |
-| SCLK   | PB3  |
+ | Function | Pin |
+ |--------|-----|
+ | CS     | PB6  |
+ | MOSI   | PB5  |
+ | MISO   | PB4  |
+ | SCLK   | PB3  |
 ---
 
 ### 🌈 RGB LED
@@ -57,9 +57,9 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 * Status indication and animations
 * Breathing and color-cycle effects
 
-| Function | Pin |
-|--------|------|
-| Data   | PC13 |
+ | Function | Pin |
+ |--------|------|
+ | Data   | PC13 |
 
 ---
 
@@ -71,12 +71,12 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 ![STM32_LINK](https://github.com/user-attachments/assets/e6c97faa-72a2-4a80-b235-3f60f9119eec)
 
 
-| Function | Pin |
-|--------|--------|
-| PIN 1  | GND    |
-| PIN 2  | SWCLK  |
-| PIN 3  | SWDIO  |
-| PIN 4  | 3V3    |
+ | Function | Pin |
+ |--------|--------|
+ | PIN 1  | GND    |
+ | PIN 2  | SWCLK  |
+ | PIN 3  | SWDIO  |
+ | PIN 4  | 3V3    |
 
 <img width="700" height="400" alt="stm32Con" src="https://github.com/user-attachments/assets/dad540dc-0cee-41d2-ad22-e1a5d51f958a" />
 
