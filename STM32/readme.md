@@ -212,13 +212,24 @@ Few Libraries are required to run the BUG-STM32, make sure they are pre-installe
 
 Explore ready-to-use examples:
 
-| Example        | Description           |
-| -------------- | --------------------- |
-| 01_LCD_Test    | Display test          |
-| 02_SD_Test     | SD card verification  |
-| 03_RGB_Test    | RGB LED effects       |
+| Example        | Description             |
+| -------------- | ------------------------|
+| 01_RGB_LED     | Different RGB Patterns  |
+| 02_LCD_TEST    | Display colors/lines/shapes  |
+|     | RGB LED effects       |
 | 04_Text_Scroll | Smooth scrolling text |
 | 05_Full_Demo   | Complete system demo  |
+
+
+**02_LCD_TEST** - give you a complete test sketch that shows:
+
+✅ Solid colors
+✅ Gradients (pattern)
+✅ Lines & shapes
+✅ Text styles
+✅ Screen test loop
+
+
 
 ---
 
@@ -233,6 +244,7 @@ Explore ready-to-use examples:
 
 - SD card uses **hardware SPI1**, separate from display SPI  
 - TFT uses **software SPI**, allowing flexible pin mapping
+- tft.invertDisplay(true) and tft.color565(b, g, r) is important to show actual colors
   
 ---
 
