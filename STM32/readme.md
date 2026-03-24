@@ -245,6 +245,8 @@ Explore ready-to-use examples:
 - SD card uses **hardware SPI1**, separate from display SPI  
 - TFT uses **software SPI**, allowing flexible pin mapping
 - tft.invertDisplay(true) and tft.color565(b, g, r) is important to show actual colors
+- tft.initR(INITR_MINI160x80) to tft.initR(INITR_BLACKTAB);
+-   tft.setRotation(3) - To rotate the display
   
 ---
 
