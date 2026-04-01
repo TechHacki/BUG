@@ -261,7 +261,7 @@ ENTER
 ```
 ---
 
-## 🪟 Windows / Linux / Mac OS
+## 🪟 Windows / Linux / Mac OS (Update the Example as per OS in Arduino)
 
 **Open Notepad in Windows**
 ```
