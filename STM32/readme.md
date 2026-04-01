@@ -212,24 +212,16 @@ Few Libraries are required to run the BUG-STM32, make sure they are pre-installe
 
 Explore ready-to-use examples:
 
-| Example        | Description             |
-| -------------- | ------------------------|
-| 01_RGB_LED     | Different RGB Patterns  |
-| 02_LCD_TEST    | Display colors/lines/shapes  |
-|     | RGB LED effects       |
-| 04_Text_Scroll | Smooth scrolling text |
-| 05_Full_Demo   | Complete system demo  |
-
-
-**02_LCD_TEST** - give you a complete test sketch that shows:
-
-✅ Solid colors
-✅ Gradients (pattern)
-✅ Lines & shapes
-✅ Text styles
-✅ Screen test loop
-
-
+| Example           | Description             |
+| --------------    | ------------------------|
+| 01_RGB_LED        | Different RGB Patterns  |
+| 02_LCD_TEST       | Display colors/lines/shapes |
+| 03_Show_Image_SD  | Read images from SD card and show on LCD |
+| 04_Write_SDCard   | Write data to SD Card |
+| 05_Notepad        | Open the notepad  |
+| 06_Chrome_History | Check the chrome history  |
+| 07_Open_Website   | Open a Website  |
+| 08_Recycle_Bin    | Open Recycle Bin  |
 
 ---
 
