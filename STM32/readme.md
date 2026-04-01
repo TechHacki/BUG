@@ -231,6 +231,49 @@ Explore ready-to-use examples:
 
 ---
 
+## 🪟 Windows / Linux / Mac OS
+
+**Open Notepad in Windows**
+```
+Keyboard.press(KEY_LEFT_GUI); // CMD
+delay(100);
+Keyboard.releaseAll();
+
+delay(1000);
+
+Keyboard.print("notepad");
+Keyboard.write(KEY_RETURN);
+```
+
+**Open TextEdit in macOS**
+```
+Keyboard.press(KEY_LEFT_GUI); // CMD
+Keyboard.press(' ');
+delay(100);
+Keyboard.releaseAll();
+
+delay(1000);
+
+Keyboard.print("textedit");
+Keyboard.write(KEY_RETURN);
+```
+
+**Open Nanp Editor in Linux**
+```
+Keyboard.press(KEY_LEFT_CTRL); // CTRL + ALT + t
+Keyboard.press(KEY_LEFT_ALT);
+Keyboard.press('t');
+delay(100);
+Keyboard.releaseAll();
+
+delay(1500);
+
+Keyboard.print("nano demo.txt");
+Keyboard.write(KEY_RETURN);
+```
+As per the operating system you have to update the code and use the shortcuts to open the tools
+
+---
 
 ### ⚠️ Important Notes
 
