@@ -279,9 +279,9 @@ As per the operating system you have to update the code and use the shortcuts to
 
 - SD card uses **hardware SPI1**, separate from display SPI  
 - TFT uses **software SPI**, allowing flexible pin mapping
-- tft.invertDisplay(true) and tft.color565(b, g, r) is important to show actual colors
-- tft.initR(INITR_MINI160x80) to tft.initR(INITR_BLACKTAB);
--   tft.setRotation(3) - To rotate the display
+- Change tft.invertDisplay(true) to tft.color565(b, g, r) - to show real colors
+- Change tft.initR(INITR_MINI160x80) to tft.initR(INITR_BLACKTAB) - Change to init the LCD with Black Color
+- tft.setRotation(3) - This function is used to rotate the display
   
 ---
 
