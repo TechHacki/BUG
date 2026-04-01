@@ -258,7 +258,7 @@ Keyboard.print("textedit");
 Keyboard.write(KEY_RETURN);
 ```
 
-**Open Nanp Editor in Linux**
+**Open Nano Editor in Linux**
 ```
 Keyboard.press(KEY_LEFT_CTRL); // CTRL + ALT + t
 Keyboard.press(KEY_LEFT_ALT);
@@ -271,7 +271,7 @@ delay(1500);
 Keyboard.print("nano demo.txt");
 Keyboard.write(KEY_RETURN);
 ```
-As per the operating system you have to update the code and use the shortcuts to open the tools
+As per the operating system you have to update the code and use the shortcuts to open the tools. All the examples codes are developed for Windows OS but you can update the commands as per the OS.
 
 ---
 
