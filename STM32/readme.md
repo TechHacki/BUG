@@ -222,13 +222,43 @@ Explore ready-to-use examples:
 | 06_Chrome_History | Check the chrome history  |
 | 07_Open_Website   | Open a Website  |
 | 08_Recycle_Bin    | Open Recycle Bin  |
+| 09_Ducky_Example  | Read ducky style scripts from the SD card and run the scrips  |
 
 ---
 
-## 📸 Demo
+## 📸 Ducky Style Scripts
 
-![Demo](docs/images/demo.gif)
+**Example 09** - Read the ducky style scripts form the SD card and execute it. You can also create and save multiple scripts in the SD card and read/execute as per your choice. In this example we have created 'payload.txt' which is saved in the SD Card and it will open the notepad and write text to it.
 
+🪟 Windows Example (Example-09 Script)
+```
+DELAY 2000
+GUI
+DELAY 2000
+STRING notepad
+ENTER
+DELAY 2000
+STRING Hello from Poopy
+ENTER
+```
+
+🍎 macOS Example
+```
+DELAY 2000
+CMD SPACE
+DELAY 2000
+STRING textedit
+ENTER
+```
+
+🐧 Linux Example
+```
+DELAY 2000
+CTRL ALT T
+DELAY 2000
+STRING nano demo.txt
+ENTER
+```
 ---
 
 ## 🪟 Windows / Linux / Mac OS
