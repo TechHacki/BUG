@@ -101,7 +101,7 @@ With integrated display, SD card support, and RGB feedback, BUG enables rapid de
 
 ---
 
-# 🛠 Getting Started
+# 🛠 Getting Started with Arduino
 
 ### Step 1. Install STM32 Board Support
 
