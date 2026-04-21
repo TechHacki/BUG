@@ -146,5 +146,46 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 <img width="900" height="700" alt="image" src="https://github.com/user-attachments/assets/8a71fb43-d10a-41aa-8224-1345b03317a7" />
 
+---
 
+
+### ⚙️ Step 5. Compile and Upload
+Now you can uplaod the code to the BUG by clikcing the upload button in Arduino
+
+---
+
+## Library Requirements
+
+Few Libraries are required to run the BUG-STM32, make sure they are pre-installed before running the examples
+* ESP32 Arduino Core
+* Required Libraries:
+  * **Adafruit_GFX** - For animations
+  * **Adafruit_ST7735** - For 0.96 TFT Display
+  * **SD** - For SD Card
+  * **Adafruit_NeoPixel** - For RGB LED
+  * **SPI** - To run the SPI
+ 
+---
+
+## 📂 Examples
+
+Explore ready-to-use examples:
+
+| Example               | Description             |
+| --------------        | ------------------------|
+| 01_RGB_LED            | Glow Different RGB Patterns  |
+| 02_LCD_TEST           | Display colors/lines/shapes |
+| 03_Show_Image         | Show the BMP file image on the LCD - Not Completed yet |
+| 04_Write_SDCard       | Write data to SD Card |
+| 05_Notepad            | Open the notepad and write something to it using HID  |
+| 06_Open_Website       | Check the website  |
+| 07_ScanWiFi_Connect   | Scan the WiFi networks and connect to one of them  |
+| 08_Create_Hotspot     | Create the Hotspot  |
+| 09_Webpage            | Create the access point and open the webpage to control |
+
+---
+
+### ⚠️ Important Notes
+
+- tft.setRotation(3) - This function is used to rotate the display
 
