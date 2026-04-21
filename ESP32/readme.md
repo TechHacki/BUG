@@ -129,4 +129,17 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 1. Go to:  
    `Tools → Board → Boards Manager`  
 
-2. Search for:
+2. Search for: ESP32 by Espressif Systems and install It.
+
+---
+
+### Step 2. Install the Libraries
+
+1. Go to -> Library Manager and install the following libraries
+   - Adafruit_ST7735
+   - Adafruit_GFX
+   - Adafruit_NeoPixel
+  
+---
+
+
