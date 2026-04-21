@@ -144,7 +144,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ### Step 3 - Check the Tool Info
 
-<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/8a71fb43-d10a-41aa-8224-1345b03317a7" />
+<img width="900" height="700" alt="image" src="https://github.com/user-attachments/assets/8a71fb43-d10a-41aa-8224-1345b03317a7" />
 
 
 
