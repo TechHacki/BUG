@@ -37,12 +37,12 @@ With integrated display, SD card support, and wireless connectivity, BUG becomes
 
 | Function | Pin |
 |--------|-----|
-| MOSI   | GPIO 17 |
-| SCLK   | GPIO 18 |
-| CS     | GPIO 4 |
-| DC     | GPIO 14  |
-| RST    | GPIO 5  |
-| BL     | GPIO 38  |
+| MOSI   | GPIO 11 |
+| SCLK   | GPIO 10 |
+| CS     | GPIO 9 |
+| DC     | GPIO 8  |
+| RST    | GPIO 12  |
+| BL     | GPIO 13  |
 
 ---
 
@@ -54,18 +54,10 @@ With integrated display, SD card support, and wireless connectivity, BUG becomes
 
 | Function | Pin |
 |--------|-----|
-| CS     | GPIO 10  |
-| MOSI   | GPIO 11 |
-| MISO   | GPIO 13 |
-| SCLK   | GPIO 12 |
-
----
-
-### 📡 WiFi + BLE
-
-* Built-in wireless connectivity  
-* WiFi scanning and automation  
-* BLE device interaction  
+| CS     | GPIO 17  |
+| MOSI   | GPIO 19 |
+| MISO   | GPIO 16 |
+| SCLK   | GPIO 18 |
 
 ---
 
@@ -76,23 +68,10 @@ With integrated display, SD card support, and wireless connectivity, BUG becomes
 
 | Function | Pin |
 |--------|------|
-| Data   | GPIO 45 |
+| Data   | GPIO 25 |
 
 ---
 
-
-### 🌈 MIC
-
-* WS2812 RGB LED support  
-* Status indication and animations  
-
-| Function | Pin |
-|--------|------|
-| SCK    | GPIO 7 |
-| DATA   | GPIO 8 |
-| WS     | GPIO 9 |
-
----
 
 ### 🧩 Modular Firmware Design
 
@@ -104,7 +83,7 @@ With integrated display, SD card support, and wireless connectivity, BUG becomes
 
 ### 🛠 Developer Friendly
 
-* Arduino + ESP-IDF compatible  
+* Arduino + Circuit Python compatible  
 * Easy to modify and extend  
 * Large ecosystem support  
 
