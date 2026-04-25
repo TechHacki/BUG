@@ -177,18 +177,32 @@ Explore ready-to-use examples:
 
 1. Open **Thonny**  and press the boot button in **BUG-RP2040** and insert to the PC
 2. Click on the right side corner and install the circuitpython
+   
    <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/befae826-05fa-492b-8ef9-686eda3a3147" />
 
-   <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/478782f2-4454-4b57-a165-7fd28514a1d8" />
-3. Go to the **This PC** and You will a **CIRCUITPY** drive
-   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/759a45a7-b2a5-456a-bd84-de1ba57a4b1f" />
    
-4. Create **lib** folder inside the **CIRCUITPY** and copy paste all the libraries from here (like below)
+
+   <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/478782f2-4454-4b57-a165-7fd28514a1d8" />
+
+
+   
+4. Go to the **This PC** and You will a **CIRCUITPY** drive
+   
+   <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/759a45a7-b2a5-456a-bd84-de1ba57a4b1f" />
+
+   
+   
+6. Create **lib** folder inside the **CIRCUITPY** and copy paste all the libraries from here (like below)
+   
    <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/50c0cbc3-ff80-4136-8330-c09091459e32" />
+
+   
 
    <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ef1ec048-3940-4e29-9eba-f6a1e2141d10" />
 
-5. Copy the example codes and make sure you save it as **code.py** to run the code.
+   
+
+8. Copy the example codes and make sure you save it as **code.py** to run the code.
 
 
    
