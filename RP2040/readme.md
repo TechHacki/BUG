@@ -169,3 +169,16 @@ Explore ready-to-use examples:
 
 - tft.setRotation(3) - This function is used to rotate the display
 
+---
+
+# 🛠 Getting Started with CircuitPython
+
+### Step 1. Install circuitpython using thonny
+
+1. Open **Thonny**  and press the boot button in **BUG-RP2040** and insert to the PC
+2. Click on the right side corner and install the circuitpython
+   <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/befae826-05fa-492b-8ef9-686eda3a3147" />
+
+
+---
+
