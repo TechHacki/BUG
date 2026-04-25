@@ -179,6 +179,9 @@ Explore ready-to-use examples:
 2. Click on the right side corner and install the circuitpython
    <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/befae826-05fa-492b-8ef9-686eda3a3147" />
 
+   <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/478782f2-4454-4b57-a165-7fd28514a1d8" />
+
+
 
 ---
 
