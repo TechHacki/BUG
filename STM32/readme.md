@@ -223,6 +223,10 @@ Explore ready-to-use examples:
 | 07_Open_Website   | Open a Website  |
 | 08_Recycle_Bin    | Open Recycle Bin  |
 | 09_Ducky_Example  | Read ducky style scripts from the SD card and run the scrips  |
+| 10_Lock_Computer  | Lock the computer  |
+| 11_Unlock_Computer | Unlock the computer using password in the program or SD can be used to store passwords  |
+| 12_Webcam         | Open the webcam and take a screenshot (You can also record the video)  |
+| 13_Take_Screenshot  | Take the custom size screenshot using mouse cursor control  |
 
 ---
 
