@@ -180,8 +180,13 @@ Explore ready-to-use examples:
 | 05_Notepad            | Open the notepad and write something to it using HID  |
 | 06_Open_Website       | Check the website  |
 | 07_ScanWiFi_Connect   | Scan the WiFi networks and connect to one of them  |
-| 08_Create_Hotspot     | Create the Hotspot  |
+| 08_Create_Hotspot     | Create the Hotspot and you can connect other devices |
 | 09_Webpage            | Create the access point and open the webpage to control |
+| 10_Audio_Record_SD    | Record the nearby sound into SD card as WAV file and you can play it later |
+| 11_Lock_Computer      | Lock the Computer |
+| 12_Unlock_Computer    | Unlock the computer and update your password in the code or can be stored in SD |
+| 13_Webcam             | Open the web cam and click the pitures and store it |
+| 14_Screenshot         | Screenshot of the custom shape using mouse and save it |
 
 ---
 
